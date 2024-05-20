@@ -4,5 +4,7 @@ name: 常青道馆
 
 type: intermediate
 
+comparator: 4000
+
 award:
   emoji: Earth
