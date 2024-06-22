@@ -8,3 +8,7 @@ comparator: 4000
 
 award:
   emoji: Earth
+
+modules:
+  - id: kenrel-security
+    icon: Eiscue
