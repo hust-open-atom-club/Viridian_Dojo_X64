@@ -4,3 +4,7 @@ challenges:
   - id: vm
     name: 教学关卡(VM 连接)
     level: 2
+
+  - id: maze
+    name: challenge maze
+    level: 4
