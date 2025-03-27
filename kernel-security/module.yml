@@ -4,7 +4,11 @@ challenges:
   - id: vm
     name: 教学关卡(VM 连接)
     level: 2
+  
+  - id: snow
+    name: challenge snow
+    level: 4
 
   - id: maze
     name: challenge maze
-    level: 4
+    level: 5
