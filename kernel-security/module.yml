@@ -5,8 +5,8 @@ challenges:
     name: 教学关卡(VM 连接)
     level: 2
   
-  - id: null_act
-    name: challenge null_act
+  - id: nullptr
+    name: challenge nullptr
     level: 3
 
   - id: snow
