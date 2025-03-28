@@ -1,7 +1,11 @@
-当前挑战关卡将教你如何使用 VM 连接挑战关卡中的 QEMU 虚拟机，并利用提前准备好的内核模块来获取 `flag`。请使用 Start 按钮启动当前挑战关卡，等待确认它已启动。解决该关卡的步骤如下所示：
+当前挑战关卡需理解并掌握 Linux Kernel 空指针解引用漏洞利用。
 
-- 在 VS Code 终端中输入 `vm -h` 查看 `vm` 脚本的使用方法(connect,exec,start,stop,restart,logs,debug,build)。你可以通过 `vm connect` 进入正在运行挑战关卡的虚拟机，可以使用 `vm logs` 获取日志，也可以在练习模式中使用 `vm debug` 调试内核。
-- 随后输入 `vm connect` 连接启动的 QEMU 虚拟机；
-- 进入 QEMU 虚拟机后，查看 `/proc/machoke` 文件即可获得 `flag`；
+- 使用 VM 操作挑战关卡中的 QEMU 虚拟机的相关步骤请查看教学关卡 `vm`。
+
+- 成功启动 QEMU 虚拟机 并进入后，`/dev/null_act` 为隐含漏洞的文件。
+
+- QEMU 虚拟机内核版本为 `linux-5.0-rc1`。
+
+- 缓解机制 `CONFIG_DEFAULT_MMAP_MIN_ADDR` 已被设置为 `0`，且 `SMAP/SMEP` 均已禁用。
 
 本次挑战，像所有其他挑战一样，位于 `/challenge` 目录中，挑战程序是 `/challenge/solve`。
