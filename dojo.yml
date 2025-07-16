@@ -10,5 +10,5 @@ award:
   emoji: Earth
 
 modules:
-  - id: kernel-security
-    icon: Eiscue
+  - id: simple-demo
+    icon: Chansey
